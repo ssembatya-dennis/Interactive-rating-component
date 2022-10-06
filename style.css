@@ -152,3 +152,48 @@ main {
   color: #fc7614;
   background-color: #ffffff;
 }
+
+/* Thank you state start -->  */
+
+.feed-icon-box {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  margin-bottom: 3.2rem;
+}
+
+.feed-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.feed-rate {
+  width: 50%;
+  margin: 0 auto;
+  background: #262e38;
+  border-radius: 22.5px;
+  padding: 8px 18px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #fc7614;
+  margin-bottom: 3.2rem;
+}
+
+.feed-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.feed-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #969fad;
+}
