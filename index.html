@@ -25,7 +25,7 @@
     <main>
       <div class="card">
         <!-- Rating state start -->
-        <div class="card__details card-state-start">
+        <div class="card__details" id="state-rate">
           <div class="card__icon">
             <img src="images/icon-star.svg" alt="Star Logo" class="icon" />
           </div>
@@ -37,25 +37,31 @@
           </p>
 
           <div class="card__ratings">
-            <a href="#" class="card__ratings_rate card__ratings_rate--1">1</a>
+            <button class="card__ratings_rate card__ratings_rate--1">1</button>
 
-            <a href="#" class="card__ratings_rate card__ratings_rate--2">2</a>
+            <button class="card__ratings_rate card__ratings_rate--2">2</button>
 
-            <a href="#" class="card__ratings_rate card__ratings_rate--3">3</a>
+            <button class="card__ratings_rate card__ratings_rate--3">3</button>
 
-            <a href="#" class="card__ratings_rate card__ratings_rate--4">4</a>
+            <button class="card__ratings_rate card__ratings_rate--4">4</button>
 
-            <a href="#" class="card__ratings_rate card__ratings_rate--5">5</a>
+            <button class="card__ratings_rate card__ratings_rate--5">5</button>
           </div>
 
-          <button class="card__submit btn">Submit</button>
+          <button
+            class="card__submit btn"
+            id="btn-submit"
+            onclick="handleSubmit()"
+          >
+            Submit
+          </button>
         </div>
 
         <!-- Rating state end -->
 
         <!-- Thank you state start -->
 
-        <div class="card__details card-state-start">
+        <div class="card__details hidden" id="state-thanks">
           <div class="feed-icon-box">
             <img
               src="images/illustration-thank-you.svg"
@@ -64,7 +70,7 @@
             />
           </div>
           <p class="feed-rate">
-            You selected {/*-- Add rating here --*/} out of 5
+            You selected <span id="rate">4</span> out of 5
           </p>
 
           <h2 class="feed-title">Thank you!</h2>

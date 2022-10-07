@@ -1,17 +1,3 @@
-/*Temporary CSS File*/
-
-:root {
-  /*Colors*/
-  --color-white: hsl(0, 0%, 100%); /* White*/
-  --grey-light: hsl(217, 12%, 63%); /*Light Grey*/
-  --grey-dark: hsl(216, 12%, 54%); /* Medium Grey*/
-  --color-primary-light: hsl(213, 19%, 18%); /*Dark Blue*/
-  --color-primary-dark: hsl(216, 12%, 8%); /*Very Dark Blue*/
-
-  /*FONTS*/
-  --text-font-size: 1.5rem;
-}
-
 *,
 *::before,
 *::after {
@@ -37,7 +23,7 @@ main {
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  background: var(--color-primary-dark);
+  background: #121417;
 }
 
 .card {
@@ -49,7 +35,7 @@ main {
     #232a34 0%,
     #181e27 100%
   );
-  border-radius: 30px;
+  border-radius: 3rem;
 }
 
 .attribution {
@@ -79,16 +65,15 @@ main {
 .card__title {
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 35px;
+  font-size: 2.8rem;
   color: #ffffff;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .card__text {
   font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 1.5rem;
+  line-height: 1.7;
   color: #969fad;
   margin-bottom: 2.4rem;
 }
@@ -109,10 +94,9 @@ main {
   height: 6rem;
   border-radius: 50%;
   background: #262e38;
-  text-decoration: none;
+  border: none;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.6rem;
   text-align: center;
   letter-spacing: 0.2px;
   color: #7c8798;
@@ -134,18 +118,17 @@ main {
   outline: none;
   background-color: transparent;
   cursor: pointer;
-  padding: 12px 16px;
+  padding: 1.2rem 1.6rem;
   width: 100%;
   font-weight: 700;
-  font-size: 15px;
-  line-height: 19px;
+  font-size: 1.5rem;
   letter-spacing: 2px;
 }
 
 .card__submit {
   background: #fc7614;
   color: #ffffff;
-  border-radius: 22.5px;
+  border-radius: 2.25rem;
 }
 
 .card__submit:hover {
@@ -171,11 +154,11 @@ main {
   width: 50%;
   margin: 0 auto;
   background: #262e38;
-  border-radius: 22.5px;
-  padding: 8px 18px;
+  border-radius: 2.25rem;
+  padding: 0.8rem 1.4rem;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 1.5rem;
+  line-height: 1.4;
   text-align: center;
   color: #fc7614;
   margin-bottom: 3.2rem;
@@ -183,17 +166,37 @@ main {
 
 .feed-title {
   font-weight: 700;
-  font-size: 28px;
-  line-height: 35px;
+  font-size: 2.8rem;
   color: #ffffff;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .feed-text {
   font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 1.5rem;
+  line-height: 1.7;
   text-align: center;
   color: #969fad;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 425px) {
+  .card {
+    max-width: 33rem;
+    height: 46rem;
+    padding: 2.2rem;
+  }
+
+  .card__ratings_rate {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .feed-rate {
+    width: 65%;
+  }
 }
