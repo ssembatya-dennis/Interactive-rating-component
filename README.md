@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-interactiveratingcomponent-with-dom-manipulation-basics-OfW3NXw1J3)
+- Live Site URL: [Interactive rating component challenge #live site](https://interactive-rating-component-delta-rouge.vercel.app/)
 
 ### Built with
 
